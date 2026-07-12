@@ -1,0 +1,5 @@
+com/hotel/mgmt/HotelReservationBddTest.class
+com/hotel/mgmt/service/ReservationServiceTest.class
+com/hotel/mgmt/service/RoomServiceIntegrationTest.class
+com/hotel/mgmt/service/OrderServiceTest.class
+com/hotel/mgmt/BaseIntegrationTest.class
