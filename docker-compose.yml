@@ -33,7 +33,7 @@ services:
 
   hotel-mgmt-service:
     build:
-      context: .
+      context: ./backend
       dockerfile: Dockerfile
     container_name: hotel-mgmt-service
     ports:
@@ -49,6 +49,18 @@ services:
       - SPRING_DATASOURCE_PASSWORD=postgres
       - SPRING_DATA_REDIS_HOST=redis
       - SPRING_DATA_REDIS_PORT=6379
+
+  hotel-mgmt-ui:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: hotel-mgmt-ui
+    ports:
+      - "3001:3001"
+    depends_on:
+      - hotel-mgmt-service
+    environment:
+      - BACKEND_URL=http://hotel-mgmt-service:8080
 
 volumes:
   pgdata:

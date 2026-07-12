@@ -1,5 +1,0 @@
-[engine:junit-jupiter]/[class:com.hotel.mgmt.HotelReservationBddTest]/[method:testEndToEndReservationAndBillingFlow()]
-[engine:junit-jupiter]/[class:com.hotel.mgmt.service.ReservationServiceTest]/[method:testCreateReservation_RoomNotAvailable()]
-[engine:junit-jupiter]/[class:com.hotel.mgmt.service.ReservationServiceTest]/[method:testCreateReservation_Success()]
-[engine:junit-jupiter]/[class:com.hotel.mgmt.service.RoomServiceIntegrationTest]/[method:testRoomLifecycleAndCaching()]
-[engine:junit-jupiter]/[class:com.hotel.mgmt.service.OrderServiceTest]/[method:testCreateOrder_Success()]
